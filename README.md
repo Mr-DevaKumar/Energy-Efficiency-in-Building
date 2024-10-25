@@ -1,5 +1,5 @@
-Title: Energy Efficiency in Smart Buildings: Machine Learning Model to Predict Heating Load
-
+## Energy Efficiency in Smart Buildings: Machine Learning Model to Predict Heating Load
+ 
 Overview: This project leverages machine learning to improve energy efficiency in buildings, with a focus on predicting heating load based on building characteristics. Given the high energy consumption of buildings globally (around 40%), optimizing energy use is critical for sustainability. Using real-world data on building dimensions, wall types, and glazing areas, the model identifies inefficiencies and offers insights that help buildings move toward net-zero energy goals.
 
 Project Outline:
