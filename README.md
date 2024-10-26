@@ -1,14 +1,34 @@
-## Energy Efficiency in Smart Buildings: Machine Learning Model to Predict Heating Load
- 
-Overview: This project leverages machine learning to improve energy efficiency in buildings, with a focus on predicting heating load based on building characteristics. Given the high energy consumption of buildings globally (around 40%), optimizing energy use is critical for sustainability. Using real-world data on building dimensions, wall types, and glazing areas, the model identifies inefficiencies and offers insights that help buildings move toward net-zero energy goals.
+## Energy Efficiency in Smart Buildings: Predicting Heating Load
 
-Project Outline:
-    Data Exploration: Conducted an exploratory analysis to understand the data structure and relationships among variables.
-    Data Preprocessing: Included handling missing values, feature scaling, and other steps to prepare data for modeling.
-    Modeling and Evaluation: Implemented multiple regression models to compare performance:
-        Linear Regression
-        Decision Tree Regressor
-        Random Forest Regressor
-        Gradient Boosting Regressor
-    Feature Analysis: Analyzed feature importance to determine which attributes significantly influence the heating load, offering actionable insights for energy management.
-    Results and Insights: Compiled key findings, model comparisons, and suggestions for future improvements.
+Objective
+This project aims to improve energy efficiency in smart buildings by predicting the heating load based on building characteristics. Using machine learning, we analyze how structural attributes impact energy consumption and identify opportunities for cost and energy savings.
+
+Dataset
+We utilized the Building Energy Efficiency dataset from the UCI Machine Learning Repository, containing features such as:
+    Relative Compactness: Measures efficiency of building shape.
+    Surface Area, Wall Area, and Roof Area: Key structural dimensions.
+    Overall Height: Building height.
+    Orientation and Glazing Area: Affect sunlight exposure and heat gain.
+    Heating Load and Cooling Load: Target variables indicating energy needs.
+
+Modeling Approach
+    Preprocessing:
+        Conducted exploratory data analysis (EDA) to understand feature distributions and relationships.
+        Scaled features for improved model performance.
+    Models Used:
+        Linear Regression: Established as a baseline model for prediction.
+        Random Forest Regressor: Selected for its ability to model complex relationships and improve accuracy.
+    Evaluation Metrics:
+        Root Mean Squared Error (RMSE) and R² Score were used to assess model performance, with Random Forest providing the highest accuracy.
+
+Key Findings
+    The Random Forest Regressor outperformed Linear Regression, effectively capturing non-linear relationships in the data.
+    Factors like surface area, glazing area, and overall height were found to have significant impacts on heating load.
+    The analysis provides actionable insights to optimize energy usage in buildings, supporting energy efficiency goals.
+
+Future Enhancements
+
+Planned improvements include:
+    Additional Features: Incorporating occupancy and real-time weather data for more accurate predictions.
+    Advanced Models: Testing models like Gradient Boosting and Neural Networks for further accuracy improvements.
+    Deployment: Building a web interface to enable building managers to interact with the model predictions.
